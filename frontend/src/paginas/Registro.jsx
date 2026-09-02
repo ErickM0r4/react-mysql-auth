@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Link } from "react-router-dom"
 
 function Registro() {
 
@@ -107,12 +108,12 @@ function Registro() {
 
           <p className="mt-6 text-center text-sm text-slate-400">
             ¿Ya tienes una cuenta?{" "}
-            <button
-              type="button"
+            <Link
+              to="/login"
               className="font-medium text-indigo-400 hover:text-indigo-300"
             >
               Inicia sesión
-            </button>
+            </Link>
           </p>
 
         </div>
